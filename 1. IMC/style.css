@@ -27,6 +27,10 @@ h1 {
   margin: 1.5rem 0 3rem 0;
   font-size: 2.5rem;
 }
+form {
+  display: flex;
+  flex-direction: row;
+}
 .container-input {
   display: flex;
   flex-direction: column;
@@ -75,6 +79,10 @@ button {
   -moz-box-shadow: 1px 8px 11px -1px rgba(43, 35, 35, 0.73);
   margin-bottom: 3rem;
 }
+button:active {
+  background-color: black;
+  color: rgb(255, 193, 79);
+}
 .result {
   font-size: 3rem;
   font-weight: bold;
@@ -93,11 +101,17 @@ button {
   main {
     width: 80%;
   }
+  form {
+    flex-direction: column;
+  }
 }
 @media (min-width: 1024px) {
   main {
     width: 85%;
     height: 20%;
+  }
+  form {
+    flex-direction: row;
   }
   .container-input {
     flex-direction: row;
